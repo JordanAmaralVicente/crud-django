@@ -26,8 +26,6 @@ def create_products(request: WSGIRequest):
 
 
 def update_products(request: WSGIRequest, id: int):
-    print(type(request))
-
     product = Product.objects.get(id=id)
     form = ProductForm(request.POST or None, instance=product)
 
