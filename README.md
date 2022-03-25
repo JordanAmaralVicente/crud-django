@@ -1,4 +1,7 @@
 # CRUD DJANGO
+Projeto básico de CRUD com a biblioteca Django que realizar salvar as informações em um Banco SQLite. E com bootstrap para estilizar os componentes. O bootstrap foi escolhido pois meu foco não foi no HTML/CSS e sim no Django, então, uma vez que o bootstrap facilita a estilização, o mesmo foi usado
+
+O projeto dá a opção e criar, listar, atualizar e deletar produtos (CRUD).
 
 # Como rodar ?
 1. primeiro, você precisa ter o [python3.10](https://www.python.org/downloads/release/python-3103/) instalado em sua máquina.
@@ -31,7 +34,14 @@ python3.10 manage.py migrate
 python3.10 manage.py runserver
 ```
 
-- superusercredentials para acessar o painel de administrador do Django caso desejar:
+# Próximos Passos
+1. Dar a opção do usuário fazer buscas por produtos específicos, com filtros e ordenação de buca
+2. Fazer integração com um banco diferente do SQlite
+3. Criar mais funcionalides - Como cadastro / Login
+4. Usar uma biblioteca de teste para os componentes
+
+
+## superusercredentials para acessar o painel de administrador do Django caso desejar:
 1. username: admin
 2. email: admin@admin.com
 3. senha: admin
