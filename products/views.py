@@ -33,7 +33,7 @@ def update_products(request: WSGIRequest, id: int):
         form.save()
         return redirect('read_products')
     
-    return render(request, 'products-form.html', {'form': form, 'product': product})
+    return render(request, 'products-form.html', {'product': product})
 
 
 def delete_products(request: WSGIRequest, id: int):
