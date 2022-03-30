@@ -2,17 +2,22 @@ from itertools import product
 from math import prod
 from django.shortcuts import render, redirect
 from django.core.handlers.wsgi import WSGIRequest
-from .models import Product
-from .forms import ProductForm
+from ..models import Product
+from ..forms import ProductForm
 
 # Create your views here.
 def read_products(request: WSGIRequest):
-    products = Product.objects.all()
-    return render(
-            request,
-            'products.html',
-            {'products': products},
-        )
+
+    render_lambda = lambda products: render(request, 'products.html', {'products':products})
+
+    search_param = request.GET.get('search', None)
+
+    if search_param:
+        products = Product.objects.filter(name__contains=search_param)
+    else:
+        products = Product.objects.all()
+    
+    return render_lambda(products)
 
 
 def create_products(request: WSGIRequest):

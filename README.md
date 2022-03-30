@@ -34,11 +34,15 @@ python3.10 manage.py migrate
 python3.10 manage.py runserver
 ```
 
+# Já feito
+1. Dar a opção do usuário realizar buscas
+
+
 # Próximos Passos
-1. Dar a opção do usuário fazer buscas por produtos específicos, com filtros e ordenação de buca
-2. Fazer integração com um banco diferente do SQlite
-3. Criar mais funcionalides - Como cadastro / Login
-4. Usar uma biblioteca de teste para os componentes
+2. Dar a opção do usuário executar filtros e ordenação de buca
+3. Fazer integração com um banco diferente do SQlite
+4. Criar mais funcionalides - Como cadastro / Login
+5. Usar uma biblioteca de teste para os componentes
 
 
 ## superusercredentials para acessar o painel de administrador do Django caso desejar:
